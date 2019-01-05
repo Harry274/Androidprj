@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".BookDetect">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:id="@+id/cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/labellst"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"></ListView>
+    </com.wonderkiln.camerakit.CameraView>
+
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="DETECT"
+        android:textSize="18dp"/>
+</RelativeLayout>

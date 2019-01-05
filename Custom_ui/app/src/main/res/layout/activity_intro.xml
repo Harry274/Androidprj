@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Intro">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/introbg1">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearlyt"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#F4ECE6"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/pagerlyt"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="521dp">
+
+        <LinearLayout
+            android:id="@+id/mdotlyt"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            tools:layout_marginLeft="132dp"></LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

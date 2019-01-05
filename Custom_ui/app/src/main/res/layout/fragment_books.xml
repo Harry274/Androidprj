@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Books">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKS"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fefefe" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="72dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/addbook" />
+</FrameLayout>

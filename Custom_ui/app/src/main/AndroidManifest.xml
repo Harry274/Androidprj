@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.harsh.custom_ui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/preplogo"
+        android:label="Prep Study"
+        android:roundIcon="@drawable/preplogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="label" />
+        <!-- To use multiple models: android:value="label,model2,model3" -->
+        <activity
+            android:name=".MainActivity2"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".userDetail" />
+        <activity
+            android:name=".Intro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reset_Pass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Notif_Notes_Books_Profile" />
+        <activity android:name=".BookDetect" />
+        <activity android:name=".SetupAccount"></activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat"/>
+    </application>
+
+</manifest>

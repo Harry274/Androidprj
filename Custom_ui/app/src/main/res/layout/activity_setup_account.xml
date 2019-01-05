@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FF71E1FF"
+    android:layout_height="match_parent"
+    tools:context=".SetupAccount">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="SETUP ACCOUNT"
+        android:textColor="#f7ef51"
+        android:textSize="30dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="233dp"
+        android:background="#FF71E1FF"
+        android:text="PROFILE PIC"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:textColorHint="#c2050505" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="169dp"
+        android:background="#f09a34"
+        android:text="Save Profile"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+</RelativeLayout>

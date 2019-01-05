@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/sinemail"
+        android:layout_width="314dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/email"
+        android:ems="10"
+        android:hint="EMAIL ID"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="40dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <EditText
+        android:id="@+id/sinpass"
+        android:layout_width="314dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="93dp"
+        android:background="@drawable/password"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"
+        android:paddingLeft="40dp"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="172dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="158dp"
+        android:background="@drawable/loginbtn"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/passfrg"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:text="Forgot Password?"
+        android:textColor="#0231DB"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@id/constraintLayout"
+        app:layout_constraintRight_toRightOf="@id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn" />
+
+</android.support.constraint.ConstraintLayout>
